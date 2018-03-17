@@ -43,13 +43,13 @@ Using pybloom is very simple, and is similar to using native sets::
 
 To support multiple servers, just add multiple servers::
 
-    from pybloom import BloomdClient
+    from pybloomd import BloomdClient
 
     # Create a client to a multiple bloomd servers, default ports
     client = BloomdClient(["bloomd1", "bloomd2"])
 
     # Create 4 filters, should be on different machines
-    for x in xrange(4):
+    for x in range(4):
         client.create_filter("test%d" % x)
 
     # Show which servers the filters are on by
@@ -65,7 +65,7 @@ To support multiple servers, just add multiple servers::
 
 Using pipelining is straightforward as well::
 
-    from pybloom import BloomdClient
+    from pybloomd import BloomdClient
 
     # Create a client to a local bloomd server, default port
     client = BloomdClient(["localhost"])
