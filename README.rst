@@ -54,7 +54,7 @@ To support multiple servers, just add multiple servers::
 
     # Show which servers the filters are on by
     # specifying the inc_server flag
-    print client.list_filters(inc_server=True)
+    print(client.list_filters(inc_server=True))
 
     # Use the filters
     client["test0"].add("Hi there!")
